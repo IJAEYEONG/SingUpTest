@@ -1,0 +1,22 @@
+
+.parent{
+  display: flex;
+}
+.parent > .checkbox{
+  width: 32px;
+  height: 32px;
+}
+.email_box{
+  display: flex;
+}
+.email_box >.checkbox{
+  width: 32px;
+  height: 32px;
+}
+.password_box{
+  display: flex;
+}
+.password_box > .checkbox{
+  width: 32px;
+  height: 32px;
+}

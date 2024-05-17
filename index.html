@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>회원가입</title>
+</head>
+<body>
+     <h2>회원가입</h2>
+    <form action="/signup" method="POST">
+        <label for="username">나의이름</label><br>
+        <div class="parent">
+            <input type="text" id="username" name="username"required> <div class ="checkbox"></div>
+        </div>
+        
+        <div id="IdResult"></div>
+        <label for="email">이메일</label><br>
+        <div class="email_box">
+            <input type="text" id="email" maxlength="50" placeholder="your@email.com" ><div class ="checkbox"></div><br>
+        </div>
+        <div id="result"></div>
+        <label for="password">비밀번호</label><br>
+        <div class="password_box">
+            <input type="password" id="newPassword" placeholder="새로운 비밀번호 입력"><br><div class ="checkbox"></div><br>
+        </div>
+        <label for="password2">비밀번호 확인</label><br>
+        <input type="password" id="confirmPassword" placeholder="위 비밀번호 입력과 동일하게 다시한번 작성해주세요">
+        <br><br>
+        <div id="passwordResult"></div>
+        <label for="txtPhone">핸드폰 번호</label><br>
+        <input type="text" id="txtPhone" value=""  maxlength="13" placeholder="000-0000-0000" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{3,4}"/>
+    </form>
+    <br>
+    <button onclick="validateForm()">작성</button>
+
+    <script type = "module" src="app.js"></script>
+</body>
+</html>
